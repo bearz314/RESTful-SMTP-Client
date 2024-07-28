@@ -6,7 +6,6 @@ This project provides an SMTP client accessible via a RESTful API, allowing serv
 
 ## Features
 
-- ****
 - **Send Emails**: Send emails using SMTP with SSL/TLS encryption.
 - **Dry Run**: Validate and decode email messages without sending them.
 - **Health Check**: Check the health status of this SMTP client.
@@ -103,7 +102,7 @@ A Dockerfile is already prepared for your convenience.
   {
     "api_key": "your_api_key",
     "envelope_from": "sender@example.com",
-    "envelope_to": ["recipient@example.com"],
+    "envelope_to": "recipient@example.com",
     "encoding": "b64",
     "raw": "<base64_encoded_raw_email_including_headers>"
   }
@@ -112,7 +111,7 @@ A Dockerfile is already prepared for your convenience.
   {
     "api_key": "your_api_key",
     "envelope_from": "sender@example.com",
-    "envelope_to": ["recipient@example.com"],
+    "envelope_to": "recipient@example.com",
     "encoding": "string",
     "raw": "<string_raw_email_including_headers>"
   }
@@ -138,7 +137,7 @@ A Dockerfile is already prepared for your convenience.
   {
     "api_key": "your_api_key",
     "envelope_from": "sender@example.com",
-    "envelope_to": ["recipient@example.com"],
+    "envelope_to": "recipient@example.com",
     "encoding": "b64",
     "raw": "<base64_encoded_raw_email_including_headers>"
   }
@@ -147,7 +146,7 @@ A Dockerfile is already prepared for your convenience.
   {
     "api_key": "your_api_key",
     "envelope_from": "sender@example.com",
-    "envelope_to": ["recipient@example.com"],
+    "envelope_to": "recipient@example.com",
     "encoding": "string",
     "raw": "<string_raw_email_including_headers>"
   }
